@@ -7,8 +7,8 @@ function Home() {
   // console.log(token)
   useEffect(()=>{
     if(token){
-        axios.get("http://localhost:8000/",{
-          headers: {'authorization':`Bearer ${token}`}})
+        axios.get("http://localhost:3000/",
+        {headers: {'authorization':`Bearer ${token}`}})
         .then(res=>console.log(res.data))
     }
     else{
@@ -17,7 +17,7 @@ function Home() {
   },[token,Navigate])
 const handleclick=()=>{
     localStorage.removeItem('token');
-    Navigate('/')
+    Navigate('/login')
 }
   return (
     <>

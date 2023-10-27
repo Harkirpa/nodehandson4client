@@ -8,7 +8,6 @@ function Login() {
             password: ""
         }
     )
-    const[store,setStore]=useState([])
     const navi=useNavigate()
     const handleInput = (event) => {
         setDetails({ ...details, [event.target.name]: event.target.value })
@@ -20,7 +19,6 @@ function Login() {
           .then((res)=>
             {
                 alert(res.data.msg)
-                setStore(res.data)
                 localStorage.setItem("token",res.data.token)
                 navi('/')
             })
@@ -35,7 +33,6 @@ function Login() {
      })
      navi('/')
     }
-     console.log(store)
   return (
    <>
         <form>
