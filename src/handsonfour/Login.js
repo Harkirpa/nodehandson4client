@@ -33,7 +33,7 @@ function Login() {
           email:" ",
           password:" "
      })
-     navi('/dashboard')
+     navi('/')
     }
      console.log(store)
   return (

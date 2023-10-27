@@ -7,12 +7,12 @@ function Home() {
   // console.log(token)
   useEffect(()=>{
     if(token){
-        axios.get('http://localhost:8000/',{
+        axios.get("http://localhost:8000/",{
           headers: {'authorization':`Bearer ${token}`}})
         .then(res=>console.log(res.data))
     }
     else{
-      Navigate("/")
+      Navigate("/login")
     }
   },[token,Navigate])
 const handleclick=()=>{
