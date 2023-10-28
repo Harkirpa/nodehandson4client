@@ -7,21 +7,21 @@ function Home() {
   // console.log(token)
   useEffect(()=>{
     if(token){
-        axios.get("http://localhost:3000/",
+        axios.get("http://localhost:4555/api",
         {headers: {'authorization':`Bearer ${token}`}})
         .then(res=>console.log(res.data))
     }
     else{
-      Navigate("/login")
+      Navigate("/dashboard")
     }
   },[token,Navigate])
 const handleclick=()=>{
     localStorage.removeItem('token');
-    Navigate('/login')
+    Navigate('/dashboard')
 }
   return (
     <>
-    <h1>Home Page</h1>
+    <h1>Hii User</h1>
    <button onClick={handleclick}>Logout</button>
  
   

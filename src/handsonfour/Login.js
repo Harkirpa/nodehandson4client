@@ -15,18 +15,19 @@ function Login() {
      const handleSubmit=(event)=>{
         event.preventDefault()
        axios
-       .post('http://localhost:8000/api/login',details)
+       .post('http://localhost:4555/api/login',details)
           .then((res)=>
             {
                 alert(res.data.msg)
+                console.log(res.data)
+                setDetails(res.data)
                 localStorage.setItem("token",res.data.token)
                 navi('/')
             })
           .catch((err)=>
-            {
-                console.log(err)
             
-     })
+                console.log(err)
+        )
      setDetails({
           email:" ",
           password:" "

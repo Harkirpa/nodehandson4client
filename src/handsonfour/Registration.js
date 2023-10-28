@@ -16,7 +16,7 @@ function Registration() {
     }
      const submit=(event)=>{
         event.preventDefault()
-       axios.post('http://localhost:8000/api/register',data)
+       axios.post('http://localhost:4555/api/register',data)
           .then((res)=>
           {
             alert(res.data.msg)
@@ -30,22 +30,22 @@ function Registration() {
             email:" ",
             password:" "
        })
-       navi("/")
+       navi("/login")
      }
      return (
    <>
    <form>
             <div className='formsnam'>
-            <input type='text'  placeholder='Name' name='name' onChange={handleInput} />
+            <input type='text'  placeholder='Name' name='name' value={data.name} onChange={handleInput} />
             </div>
             <div className='emailform'>
-                  <input type='text' placeholder='Email' name='email' onChange={handleInput} />
+                  <input type='text' placeholder='Email' name='email' value={data.email} onChange={handleInput} />
                   </div>
                   <div className='telno'>
-                  <input type='tel' placeholder='Phoneno' name='phone' onChange={handleInput} />
+                  <input type='tel' placeholder='Phoneno' name='phone' value={data.phone} onChange={handleInput} />
                   </div>
                   <div className='formpa'>
-                  <input type='password'  placeholder='Password' name='password' onChange={handleInput} /> 
+                  <input type='password'  placeholder='Password' name='password' value={data.password} onChange={handleInput} /> 
                   </div>
             <button type='btn' className='btn' onClick={submit}>Register</button>
         </form>
