@@ -32,31 +32,6 @@ body {
   font-weight: bold;
 }
 
-/* .formpass{
-  position: relative;
-  top:158px;
-  left:-215px;
-}
-.emailform{
-  position:relative;
-  top:156px;
-  left:-270px;
-}
-.formpa{
-  position: relative;
-  top:191px;
-  left:-268px;
-} */
-.telno{
-  position: relative;
-  top:172px;
-  left:-268px;
-}
-.formsnam{
-position: relative;
-top:135px;
-left:-270px;
-}
 #go{
   height:51px;
   width:196px;
@@ -69,7 +44,7 @@ left:-270px;
 #go:hover{
   background-color: rgb(74,211,211);
 }
-#email, #password {
+#email, #password,#name, #phone {
   height:51px;
   width:196px;
   border-radius: 40px;
@@ -82,5 +57,14 @@ left:-270px;
   position: relative;
   top:150px;
 }
+#phone{
+  position: relative;
+  top:120px;
+}
+#name{
+  position: relative;
+  top:80px;
+}
+
 
 
