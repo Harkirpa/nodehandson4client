@@ -47,7 +47,7 @@ function Registration() {
                   <div className='formpa'>
                   <input type='password'  placeholder='Password' name='password' value={data.password} onChange={handleInput} /> 
                   </div>
-            <button type='btn' className='btn' onClick={submit}>Register</button>
+            <button type='btn' id='go' onClick={submit}>Register</button>
         </form>
    </>
   )

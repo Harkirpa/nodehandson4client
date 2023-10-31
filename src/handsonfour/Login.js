@@ -39,12 +39,12 @@ function Login() {
         <form>
             <div className='box-form'>
                 <div className='form'>
-                  <input type='text' placeholder='Email' name='email' value={details.email} onChange={handleInput} />
+                  <input type='text' placeholder='Email' name='email' id='email' value={details.email} onChange={handleInput} />
                   </div>
                   <div className='formpass'> 
-            <input type='password'  placeholder='Password' name='password' value={details.password} onChange={handleInput} />
+            <input type='password'  placeholder='Password' name='password' id='password' value={details.password} onChange={handleInput} />
             </div>
-            <button type='btn' className='btn' onClick={handleSubmit}>Submit</button>
+            <button type='btn' id="go" onClick={handleSubmit}>Submit</button>
             </div>
                   </form>
    </>

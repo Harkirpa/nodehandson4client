@@ -31,19 +31,11 @@ body {
 
   font-weight: bold;
 }
-.form{
-  position: relative;
-  top:132px;
-  left:-216px;
-}
-.formpass{
+
+/* .formpass{
   position: relative;
   top:158px;
   left:-215px;
-}
-.btn{
-  position: relative;
-  top:168px;
 }
 .emailform{
   position:relative;
@@ -54,7 +46,7 @@ body {
   position: relative;
   top:191px;
   left:-268px;
-}
+} */
 .telno{
   position: relative;
   top:172px;
@@ -65,4 +57,30 @@ position: relative;
 top:135px;
 left:-270px;
 }
+#go{
+  height:51px;
+  width:196px;
+  border-radius: 40px;
+  background-color: lightskyblue;
+  position: relative;
+  top:136px;
+  left:300px;
+}
+#go:hover{
+  background-color: rgb(74,211,211);
+}
+#email, #password {
+  height:51px;
+  width:196px;
+  border-radius: 40px;
+  background-color: lightskyblue;
+  text-align: center;
+  top:100px;
+  position: relative;
+}
+#password{
+  position: relative;
+  top:150px;
+}
+
 
